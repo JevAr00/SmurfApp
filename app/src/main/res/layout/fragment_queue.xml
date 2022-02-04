@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblClasificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Clasifcacion"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblRango"
+        app:layout_constraintVertical_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.15"
+        />
+
+    <TextView
+        android:id="@+id/lblRango"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="rango"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        app:layout_constraintVertical_bias="0.48"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/lblClasificacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/lblPuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="00"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/lblLP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="LP"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintVertical_bias="0.62"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="120dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerQueue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

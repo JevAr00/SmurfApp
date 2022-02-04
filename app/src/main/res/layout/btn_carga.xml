@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:gravity="center"
+    android:background="@drawable/btn_carga_layout_bg">
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/btnItemBarraCarga"
+            android:visibility="gone"
+            android:indeterminateTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/btnItemTexto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Buscar"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

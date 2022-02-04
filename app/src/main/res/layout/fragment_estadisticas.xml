@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iconoInvocador"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/lblNombreInvocador"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        tools:text="Nombre Invocador"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Lvl:1000"
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/separadorCabecera"
+        app:layout_constraintStart_toEndOf="@+id/iconoInvocador"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/emblemaRanked"
+        android:layout_width="130dp"
+        android:layout_height="135dp"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombreEmblema"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        tools:text="Challenger"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/separadorCabecera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emblemaRanked" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/separadorCabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="229dp" />
+
+    <TextView
+        android:id="@+id/winsNumero"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        tools:text="50"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintTop_toTopOf="@+id/separadorCabecera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lossesNumero" />
+
+    <TextView
+        android:id="@+id/lblWins"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        tools:text="Victorias"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.0011"
+        app:layout_constraintTop_toBottomOf="@+id/winsNumero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblLosses" />
+
+    <TextView
+        android:id="@+id/lossesNumero"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        tools:text="50"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintTop_toTopOf="@+id/separadorCabecera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/winsNumero"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblLosses"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        tools:text="Derrotas"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginStart="4.5dp"
+        app:layout_constraintVertical_bias="0.001"
+        app:layout_constraintTop_toBottomOf="@+id/lossesNumero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblWins"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNodatos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "¡¿Que ha pasado?!"
+        android:textSize="18sp"
+        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintTop_toTopOf="@+id/separadorCabecera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgNodatos"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintVertical_bias="0.46"
+        app:layout_constraintTop_toTopOf="@+id/separadorCabecera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblNodatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="no clasificado"
+        android:textSize="18sp"
+        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintTop_toTopOf="@+id/separadorCabecera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/lblPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "Porcentaje de victoria"
+        android:textSize="20sp"
+        app:layout_constraintVertical_bias="0.98"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/grafico"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.87"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
